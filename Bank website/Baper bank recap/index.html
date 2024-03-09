@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional bap ar bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<header>
+    <h1 class="text-center text-4xl mt-8">Functional <span class="text-red-500 font-semibold">Baap Er Bank</span>!!!</h1>
+</header>
+    <main class="w-9/12 mx-auto">
+        <section class="grid grid-cols-3 w-3/4 gap-4 mx-auto  text-white">
+            <div class="mt-8 p-8 bg-orange-400 rounded-lg">
+                <h2 class="text-2xl ">Deposit</h2>
+                <h1 class="text-4xl font-medium">$<span id="total-deposit">00</span></h1>
+            </div>
+            <div class="mt-8 p-8 bg-red-400 rounded-lg">
+                <h2 class="text-2xl ">withdraw</h2>
+                <h1 class="text-4xl font-medium">$<span id="total-withdraw">00</span></h1>
+            </div>
+            <div class="mt-8 p-8 bg-green-400 rounded-lg">
+                <h2 class="text-2xl ">Balance</h2>
+                <h1 class="text-4xl font-medium">$<span id="total-balance">1400</span></h1>
+            </div>
+        </section>
+
+
+        <section class="grid grid-cols-2 w-3/4 gap-4 mx-auto  text-white">
+            <div class="mt-8 p-8 bg-teal-500 rounded-lg ">
+                <h2 class="text-2xl ">Your Deposit</h2>
+                <input id="deposit-input-field" class="w-3/4 mt-2 pl-2 text-black block" type="text" placeholder="amount you want to Deposit">
+                <button id="btn-deposit" class="py-2 px-6 bg-orange-400 mt-4 rounded-lg hover:bg-sky-700 font-medium">Deposit</button>
+            </div>
+
+
+            <div class="mt-8 p-8 bg-violet-500 rounded-lg ">
+                <h2 class="text-2xl ">Your withdraw</h2>
+                <input id="withdraw-input-field" class="w-3/4 mt-2 pl-2 block text-black" type="text" placeholder="amount you want to Deposit">
+                <button id="btn-withdraw" class="py-2 px-6 bg-orange-400 mt-4 rounded-lg hover:bg-sky-700 font-medium">withdraw</button>
+            </div>
+            
+        </section>
+    </main>
+
+    <script src="./js/diposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+</body>
+</html>
